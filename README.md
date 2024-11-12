@@ -1,7 +1,13 @@
-
 # js-file-to-function-tree
 Create a mermaid &amp; svg tree of the function calling from a js file, with the no. of lines consumed by each function. should be helpful for doing quick scan/xray of unknown js file.
 
+**Installation:**
+First install the required packages:
+
+    npm install @babel/parser @babel/traverse
+    npm install -g @mermaid-js/mermaid-cli
+
+**Usage**
 You can use this script in three ways:
 
 **Basic analysis:**
@@ -26,3 +32,4 @@ The generated diagram will show:
  - Number of lines in each function 
  - Line number where function is defined 
  - Call relationships between functions
+
